@@ -1,0 +1,39 @@
+html{
+    box-sizing: border-box;
+}
+ body{ 
+    background-color: #60a9ff;
+    display: flex;
+    
+    /* flex-direction: row; */
+    justify-content: center;
+    align-items: center; 
+    min-height: 100vh;
+    min-width: auto;
+} 
+.panel{
+    background-color: white;
+    pad: 10px 15px;
+    width: 100%;
+    
+    max-width: 900px;
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+
+}
+.pricing-img{
+    max-width: 100%;
+}
+.pricing-plan {
+    border-bottom: 1px solid #e1f1ff;
+  }
+  .pricing-plan:last-child {
+    border-bottom: none;
+  }
+@media(max-width: 800px){
+    .panel{
+
+        flex-direction: column;
+    }
+}
